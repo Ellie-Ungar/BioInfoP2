@@ -1,6 +1,6 @@
 
 
-# Project 2
+# The Smith-Waterman Algorithm
 
 ## Our Team
 
