@@ -1,31 +1,22 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Ellie-Ungar/BioInfoP2/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Project 2
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-markdown
-Syntax highlighted code block
-
-# Our Team
+## Our Team
 
 ## History and Background
 
-### Motivations and Problem Statments
+## Motivations and Problem Statments
 
-#### Analysis of Our Solution
+## Analysis of Our Solution
 
-##### Test Files Illustrating Our Solution
+## Test Files Illustrating Our Solution
 
-###### How to Implement Our Solution
+## How to Implement Our Solution
 
-###### A Technical Explanation
+## A Technical Explanation
 
-###### Bibliography
+## Bibliography
 
 - Bulleted
 - List
