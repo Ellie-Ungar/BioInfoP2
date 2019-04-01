@@ -1,6 +1,6 @@
 
 
-# The Smith-Waterman Algorithm
+
 
 ## Our Team
 
