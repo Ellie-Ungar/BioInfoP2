@@ -3,6 +3,21 @@
 # Project 2
 
 ## Our Team
+-Project Manager: Torgeir Kjoeita
+
+-Researcher: Derek Parkinson
+
+-Quality Assurance Specialist: Rick Djeuhon 
+
+-Developer: Carly Good
+
+-Developer: Ali Yar Khan
+
+-Technical Writer: Ellie Ungar
+
+-GUI Developer: Seth Barker 
+
+
 
 ## History and Background
 
