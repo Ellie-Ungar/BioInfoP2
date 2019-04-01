@@ -3,6 +3,7 @@
 # Project 2
 
 ## Our Team
+
 -Project Manager: Torgeir Kjoeita
 
 -Researcher: Derek Parkinson
