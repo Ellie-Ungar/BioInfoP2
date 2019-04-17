@@ -5,23 +5,29 @@
 ## Our Team
 
 - Project Manager: **Torgeir Kjoeita**
-  Role: Torgeir coordinated the efforts of our group and lead us towards our final solution.
+
+Role: Torgeir coordinated the efforts of our group and lead us towards our final solution.
   
 - Researcher: **Derek Parkinson**
-  Role: Derek provided background information regarding the algorithms we used to design our  solution. He enabled us to contextualize our work as well as completing the initial ground work necessary for us to begin building our solution.
+
+Role: Derek provided background information regarding the algorithms we used to design our  solution. He enabled us to contextualize our work as well as completing the initial ground work necessary for us to begin building our solution.
 
 - Quality Assurance Specialist: **Rick Djeuhon** 
+
 Role: Rick tested our solution to make sure that it would function with a variety of test cases and analyzed our solution to make sure that it performed the necessary functions.
 
 - Developer: **Carly Good**
 
 - Developer: **Ali Yar Khan**
+
 Role: Ali and Carly worked together to develop the DNA sequence matcher that took inputs from the user and outputted matching results.
 
 - Technical Writer: **Ellie Ungar**
+
 Role: Ellie curated and presented the work done by the group in this website, and created a presentation showcasing the solution.
 
 - GUI Developer: **Seth Barker**
+
 Role: Seth developed the GUI. As such, he was responsable for creating the user interface experience.
 
 
