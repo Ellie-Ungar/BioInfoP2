@@ -53,10 +53,14 @@ All test files can be found here :<a href= "https://drive.google.com/open?id=1l4
 
 ## Bibliography
 [1] Norman Casagrande, Basic-Algorithms of Bioinformatics Applet, http://baba.sourceforge.net/, 2003.
+
 [2] Freiburg RNA Tools. Teaching Smith-Waterman.
+
 [3] Jacob Porter, Jonathan Berkhahn, Liqing Zhang. A Comparitive Analysis of Read Mapping and Indel Calling Pipelines for Next-Generation Sequencing Data.
 In Emerging Trend in Computational Biology, Bioinformatics, and Systems Biology. 2015, pages 521-535.
+
 [4] Supratim Choudhuri. Sequence Alignment and Similarity Searching in Genomic Databases.
 In Bioinformatics for Beginners. 2014, pages 133-135.
+
 [5] Julie Dawn Thompson. Heuristic Sequence Alignment Methods. 
 In Statistics for Bioinformatics. 2016, pages 29-41.
