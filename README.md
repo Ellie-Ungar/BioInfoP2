@@ -45,7 +45,29 @@ Overall, our challenge was to create a piece of software that biologists can use
 ## Analysis of Our Solution
 
 ## Test Files Illustrating Our Solution
-All test files can be found here :<a href= "https://drive.google.com/open?id=1l4D3DFSI4ph1DigvAHtEv0Uj6f2quMfy" > in the google drive folder </a>
+
+Our Quality Assurance Specialist ran many tests to ensure that our solution was robust, and could handle a variety of inputs. The following is an example of such a test case, in which one input string being compared was a different length than the other:
+
+Sample input:
+
+Longer sequence compared to second sequence
+
+seq1:ACCGTTCTGAGTCGATCACCGTTCTGAGTCGATC
+
+seq2:ACCGTTCTGAGTCGATCACCGTTCT
+
+---------------------------------------------
+
+Input file : test 11.txt
+
+Algorithm tested : ALL algorithms
+
+Expected output : 25
+
+Actual Output :25
+
+
+For more from our Quality Assurance Specialist: all test files can be found here :<a href= "https://drive.google.com/open?id=1l4D3DFSI4ph1DigvAHtEv0Uj6f2quMfy" > in the google drive folder </a>
 
 ## How to Use our Program
 
