@@ -49,7 +49,7 @@ All test files can be found here :<a href= "https://drive.google.com/open?id=1l4
 
 ## How to Use our Program
 
-<img src="documents/GUI.png" alt="hi" class="inline"/>
+Our program is straightforward and easy to use. Begin by running the GUI_Example class in your java IDE of choice. As soon as you hit "run", a small window, or GUI, should pop up for you to use. This GUI will except five inputs. The first three are your scoring weights. Use the drop down menu to add your desired scoring weights for a match, mismatch, and gap respectively. Next, use the final dropdown menu at the bottom left of the GUI to select with algorithm you'd like to run. You can chose between the Smith-Waterman Algorithm, the Brute Force Algorithm, the Greedy Algorithm, and the Divide and Conquer Algorithm. Finally, hit the "Choose File" button to select the file with your data. As soon as you select your file, the algorithm you have chosen will run, and you will see your outputs on the righthand side of the GUI.
 
 ## A Technical Explanation
 
