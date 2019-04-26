@@ -44,9 +44,7 @@ Overall, our challenge was to create a piece of software that biologists can use
 
 ## Analysis of Our Solution
 The time complexity of our algorithms are as follows : 
-
 Where;
-
 N is the first/longest string
 M is the second/shortest string
 
@@ -61,8 +59,6 @@ O(n^2)
 
 Greedy - Really fast but can and will give the wrong output. In our implementation it takes the first match it can finds and assumes that is the correct output. 
 O(n * m)
-
-<img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLn6QxPkVLGNYM8PUTC79UXZ31zOTkr56RWDZGDvPWTzBrzGolwY7O2KlCjS9z_H6raGCKMhVbweS4/pubchart?oid=825962296&format=image" alt="hi" class="inline"/>
 
 
 ## Test Files Illustrating Our Solution
@@ -160,6 +156,18 @@ We also implemented a much simpler scoring algorithm, known as the greedy algori
 				} else if (a.charAt(j) == b.charAt(j)) {
 					score++;
 				} 
+#### The Brute Force Algorithm
+
+The Brute Force Algorithm represents the most inefficient way to compare two nucleotide strings. Instead of efficiently comparing substrings of different lengths as in the Smith-Waterman algorithm, the Brute Force Algorithm compares all substrings of length one (the smallest possible length) one at a time. It then applies the scoring method to these substrings based on whether or not the substrings match or mismatch:
+
+	if (a.substring(0, 1).equals(b.substring(0, 1))) {
+					curScore += match;
+				}
+The Brute Force Algorithm deals with gaps by comparing the length difference between the two strings being compared:
+
+	if (a.length() != b.length()) {
+					curScore = Math.abs(a.length() - b.length()) * space;
+				}
 
 ## Bibliography
 [1] Norman Casagrande, Basic-Algorithms of Bioinformatics Applet, http://baba.sourceforge.net/, 2003.
