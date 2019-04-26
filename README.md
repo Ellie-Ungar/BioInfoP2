@@ -180,34 +180,64 @@ The Brute Force Algorithm deals with gaps by comparing the length difference bet
 
 The underlying principle of the divide and conquer algorithm is what the name suggests. A problem is broken up into smaller sub-problems, which are then addressed by smaller, less complex algorithms. When using a Divide and Conquer Algorithm to compare string of nucleotides, the strings must first be sub-divided into smaller sections in order to simplify the comparison process:
 
-	String[] divisionsX = new String[x.length()];
-		int[] indicesX = new int[x.length()];
+		// Add all subsequences of x to array list
 		for (int i = 0; i < x.length(); i++) {
-			if (i + k < x.length()) {
-				divisionsX[i] = x.substring(i, i + k);
-				indicesX[i] = i;
+			for (int j = i + 1; j < x.length(); j++) {
+				xIterations.add(x.substring(i, j));
+			}
+		}
+
+		// Add all subsequences of y to array list
+		for (int i = 0; i < y.length(); i++) {
+			for (int j = i + 1; j < y.length(); j++) {
+				yIterations.add(y.substring(i, j));
 			}
 		}
 
 Once this subdivision had taken place, the algorithm searches for matching substrings within each division. This shortens the searching process and decreases the overall number of iterations, since the total number and size of substrings that the algorithm must search decreases. However, this increased simplicity sacrifices some accuraccy:
 
-	int[] seedX = new int[divisionsX.length * divisionsY.length];
-		int[] seedY = new int[divisionsX.length * divisionsY.length];
-		int[] score = new int[divisionsX.length * divisionsY.length];
-		int seedCount = 0;
+		// Loop through all subsequences comparing them to one another
+		for (int i = 0; i < xIterations.size(); i++) {
+			for (int j = 0; j < yIterations.size(); j++) {
+				// Initialize variables to keep rack of current score
+				int curScore = 0;
+				String a = xIterations.get(i);
+				String b = yIterations.get(j);
 
-		for (int i = 0; i < divisionsX.length; i++) {
-			for (int j = 0; j < divisionsY.length; j++) {
-				try {
-					if (divisionsX[i].equals(divisionsY[j])) {
-						seedX[seedCount] = indicesX[i];
-						seedY[seedCount] = indicesY[j];
-						score[seedCount] = match * k;
-						seedCount++;
+				// Check for gaps and update score
+				if (a.length() != b.length()) {
+					curScore = Math.abs(a.length() - b.length()) * space;
+				}
+
+				// Go through each letter in sequences to check for matches and mismatches.
+				// Update score accordingly
+				if (a.length() < b.length()) {
+					for (int k = 0; k < a.length() - 1; k++) {
+						if (a.substring(k, k + 1).equalsIgnoreCase(b.substring(k, k + 1))) {
+							curScore += match;
+						} else {
+							curScore += mismatch;
+						}
+					}
+				} else {
+					for (int k = 0; k < b.length() - 1; k++) {
+						if (a.substring(k, k + 1).equalsIgnoreCase(b.substring(k, k + 1))) {
+							curScore += match;
+						} else {
+							curScore += mismatch;
 						}
 					}
 				}
+
+				// Update highest score
+				if (curScore > highestscore) {
+					highestscore = curScore;
+					highestScoreX = a;
+					highestScoreY = b;
+				}
+
 			}
+		}
 
 ## Bibliography
 [1] Norman Casagrande, Basic-Algorithms of Bioinformatics Applet, http://baba.sourceforge.net/, 2003.
