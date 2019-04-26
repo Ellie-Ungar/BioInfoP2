@@ -129,6 +129,16 @@ Once the Smith-Waterman Algorithm has created this score matrix, it compares the
 			}
 		}
 
+#### The Greedy Algorithm
+
+We also implemented a much simpler scoring algorithm, known as the greedy algorithm. This algorithm simply increments the score for every mismatched nucleotide in the sequence, rather than finding an optimal alignment to ensure optimal scoring. As such, this algorithm is far less accurate than the Smith-Waterman Algorithm. Below, you can see how the scoring is incremented if nucleotides in position "i" on string A don't match the corresponding nucleotide in position "j" on string B:
+
+	for (int j = 0; j < a.length() - 1; j++) {
+				if (a.charAt(j) != b.charAt(j)) {
+					score--;
+				} else if (a.charAt(j) == b.charAt(j)) {
+					score++;
+				} 
 
 ## Bibliography
 [1] Norman Casagrande, Basic-Algorithms of Bioinformatics Applet, http://baba.sourceforge.net/, 2003.
