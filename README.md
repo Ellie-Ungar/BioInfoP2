@@ -176,6 +176,39 @@ The Brute Force Algorithm deals with gaps by comparing the length difference bet
 					curScore = Math.abs(a.length() - b.length()) * space;
 				}
 
+#### The Divide and Conquer Algorithm
+
+The underlying principle of the divide and conquer algorithm is what the name suggests. A problem is broken up into smaller sub-problems, which are then addressed by smaller, less complex algorithms. When using a Divide and Conquer Algorithm to compare string of nucleotides, the strings must first be sub-divided into smaller sections in order to simplify the comparison process:
+
+	String[] divisionsX = new String[x.length()];
+		int[] indicesX = new int[x.length()];
+		for (int i = 0; i < x.length(); i++) {
+			if (i + k < x.length()) {
+				divisionsX[i] = x.substring(i, i + k);
+				indicesX[i] = i;
+			}
+		}
+
+Once this subdivision had taken place, the algorithm searches for matching substrings within each division. This shortens the searching process and decreases the overall number of iterations, since the total number and size of substrings that the algorithm must search decreases. However, this increased simplicity sacrifices some accuraccy:
+
+	int[] seedX = new int[divisionsX.length * divisionsY.length];
+		int[] seedY = new int[divisionsX.length * divisionsY.length];
+		int[] score = new int[divisionsX.length * divisionsY.length];
+		int seedCount = 0;
+
+		for (int i = 0; i < divisionsX.length; i++) {
+			for (int j = 0; j < divisionsY.length; j++) {
+				try {
+					if (divisionsX[i].equals(divisionsY[j])) {
+						seedX[seedCount] = indicesX[i];
+						seedY[seedCount] = indicesY[j];
+						score[seedCount] = match * k;
+						seedCount++;
+						}
+					}
+				}
+			}
+
 ## Bibliography
 [1] Norman Casagrande, Basic-Algorithms of Bioinformatics Applet, http://baba.sourceforge.net/, 2003.
 
