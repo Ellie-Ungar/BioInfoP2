@@ -75,7 +75,7 @@ Our program is straightforward and easy to use. Begin by running the GUI_Example
 
 ## A Technical Explanation
 
-1) The Smith-Waterman Algorithm:
+####The Smith-Waterman Algorithm:
     The Smith-Waterman algorithm performs its comparison by creating a matrix of scores for every possible subsequence of nucleotides   within the two sequences being compared. The code required to create this matrix is shown below. You can see where the user inputs are factored into the algorithm everywhere the variables "space", "match", and "mismatch" appear. At these locations in the code, the scoring values assigned to a match, mismatch, or space are used to calculate the score of the two substrings being compared.
 
 		
@@ -106,6 +106,28 @@ Our program is straightforward and easy to use. Begin by running the GUI_Example
 
 			}
 		}
+
+Once the Smith-Waterman Algorithm has created this score matrix, it compares the scores at diagonal locations in the matrix in order to find the alignment that results in optimal scoring:
+
+	boolean found = false;
+		int i = Xco;
+		int j = Yco;
+		System.out.println(i + " " + scoreChart.length);
+		System.out.println(j);
+
+		while (!found) {
+			if (scoreChart[i - 1][j - 1] > 0) {
+				i--;
+				j--;
+			} else if (scoreChart[i - 1][j] > scoreChart[i][j - 1] && scoreChart[i - 1][j] > scoreChart[i][j]) {
+				i--;
+			} else if (scoreChart[i][j - 1] > scoreChart[i][j]) {
+				j--;
+			} else {
+				found = true;
+			}
+		}
+
 
 ## Bibliography
 [1] Norman Casagrande, Basic-Algorithms of Bioinformatics Applet, http://baba.sourceforge.net/, 2003.
