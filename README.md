@@ -43,6 +43,23 @@ Smith Waterman does carry some disadvantages. An O(mn) complexity is very high f
 Overall, our challenge was to create a piece of software that biologists can use to match DNA sequences from different people or different organisms.
 
 ## Analysis of Our Solution
+The time complexity of our algorithms are as follows : 
+Where;
+N is the first/longest string
+M is the second/shortest string
+
+Divide and conquer is slow and inefficient. But it will return a correct solution. 
+O(n^2)
+
+Smith Waterman - O (n * m)
+Runs slower than Greedy but faster than all other algorithms we have. It will also give a optimal output. When balancing speed and correctness Smith Waterman is the recommended solution. 
+
+Brute force - always correct output. However it’s slow and during testing of long strings we would run out of memory.
+O(n^2)
+
+Greedy - Really fast but can and will give the wrong output. In our implementation it takes the first match it can finds and assumes that is the correct output. 
+O(n * m)
+
 
 ## Test Files Illustrating Our Solution
 
