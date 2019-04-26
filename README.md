@@ -75,7 +75,8 @@ Our program is straightforward and easy to use. Begin by running the GUI_Example
 
 ## A Technical Explanation
 
-####The Smith-Waterman Algorithm:
+#### The Smith-Waterman Algorithm:
+
     The Smith-Waterman algorithm performs its comparison by creating a matrix of scores for every possible subsequence of nucleotides   within the two sequences being compared. The code required to create this matrix is shown below. You can see where the user inputs are factored into the algorithm everywhere the variables "space", "match", and "mismatch" appear. At these locations in the code, the scoring values assigned to a match, mismatch, or space are used to calculate the score of the two substrings being compared.
 
 		
