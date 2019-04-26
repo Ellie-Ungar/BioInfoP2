@@ -62,7 +62,7 @@ O(n^2)
 Greedy - Really fast but can and will give the wrong output. In our implementation it takes the first match it can finds and assumes that is the correct output. 
 O(n * m)
 
-[img]https://docs.google.com/spreadsheets/d/e/2PACX-1vTLn6QxPkVLGNYM8PUTC79UXZ31zOTkr56RWDZGDvPWTzBrzGolwY7O2KlCjS9z_H6raGCKMhVbweS4/pubchart?oid=825962296&format=image[/img]
+<img>https://docs.google.com/spreadsheets/d/e/2PACX-1vTLn6QxPkVLGNYM8PUTC79UXZ31zOTkr56RWDZGDvPWTzBrzGolwY7O2KlCjS9z_H6raGCKMhVbweS4/pubchart?oid=825962296&format=image</img>
 
 ## Test Files Illustrating Our Solution
 
