@@ -60,7 +60,7 @@ O(n^2)
 Greedy - Really fast but can and will give the wrong output. In our implementation it takes the first match it can finds and assumes that is the correct output. 
 O(n * m)
 
-![img](Img/graph.png)
+![img](img/graph.png)
 
 ## Test Files Illustrating Our Solution
 
